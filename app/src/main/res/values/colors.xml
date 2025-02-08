@@ -4,4 +4,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="primary">#0C7FDA</color>
     <color name="gray">#C7D0D8</color>
+    <color name="blue">#1E88E5</color> <!-- Warna biru cerah -->
+    <color name="blue_light">#90CAF9</color> <!-- Warna biru muda -->
+
+    <color name="light_gray">#F5F5F5</color>
 </resources>

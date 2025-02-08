@@ -18,6 +18,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".tampilansucces"
+            android:exported="false" />
+        <activity
             android:name=".activity_data_diri.blank"
             android:exported="false" />
         <activity

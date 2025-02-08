@@ -32,7 +32,8 @@ class request : AppCompatActivity() {
             override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
                 when (position) {
                     0 -> {
-
+                        formContainer.removeAllViews()
+                        layoutInflater.inflate(R.layout.activity_request_ibu, formContainer, true)
                     }
                     1 -> {
                         formContainer.removeAllViews()
