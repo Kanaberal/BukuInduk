@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/dashboard_siswa"
+        android:title=" "/>
+
+    <item
+        android:id="@+id/navigation_biodata"
+        android:icon="@drawable/biodata_siswa"
+        android:title=" "/>
+
+    <item
+        android:id="@+id/navigation_request"
+        android:icon="@drawable/request"
+        android:title=" "/>
+    <item
+        android:id="@+id/navigation_eraport"
+        android:icon="@drawable/eraport"
+        android:title=" "/>
+</menu>

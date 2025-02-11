@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Foto Profil -->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/biodata_siswa"
+            android:background="@drawable/circle_background"
+            android:scaleType="centerCrop"/>
+
+        <!-- Nama dan Kelas -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bayu Galon" android:textSize="22sp" android:textStyle="bold" android:textColor="#007AFF" android:layout_marginTop="8dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Siswa XI RPL 3" android:textSize="16sp" android:textColor="#333333" android:layout_marginBottom="16dp"/>
+
+        <!-- Biodata Siswa -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/card_background" android:padding="12dp" android:elevation="4dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Biodata Siswa" android:textStyle="bold" android:textSize="18sp" android:textColor="#000000"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nama Lengkap: Abdul Bayu Sumanto"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Jenis Kelamin: Laki-laki"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tempat Lahir: Malang"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tanggal Lahir: 12 Mei 2006"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Agama: Islam"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kewarganegaraan: Indonesia"/>
+        </LinearLayout>
+
+        <!-- Alamat Siswa -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/card_background" android:padding="12dp" android:elevation="4dp" android:layout_marginTop="8dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Alamat Siswa" android:textStyle="bold" android:textSize="18sp" android:textColor="#000000"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Alamat: Jl. Tumapel Gg. 5 RT 01 RW 02"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No Telepon: 086754345678"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tinggal Dengan: Orang Tua"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Jarak ke Sekolah: 5 km"/>
+        </LinearLayout>
+
+        <!-- Kesehatan Siswa -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/card_background" android:padding="12dp" android:elevation="4dp" android:layout_marginTop="8dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kesehatan Siswa" android:textStyle="bold" android:textSize="18sp" android:textColor="#000000"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Golongan Darah: O"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Penyakit: Tidak Ada"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kelainan Jasmani: Tidak Ada"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tinggi Badan: 170 cm"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Berat Badan: 65 kg"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/card_background" android:padding="12dp" android:elevation="4dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Keterangan Ayah" android:textStyle="bold" android:textSize="18sp" android:textColor="#000000"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nama: Sumarno"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TTL: Malang, 1 Januari 1975"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Agama: Islam"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kewarganegaraan: Indonesia"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pekerjaan: Pegawai Negeri"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pengeluaran Per Bulan: Rp5.000.000"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Masih Hidup: Ya"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/card_background" android:padding="12dp" android:elevation="4dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Keterangan Ibu" android:textStyle="bold" android:textSize="18sp" android:textColor="#000000"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nama: Sri Lestari"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TTL: Malang, 5 Maret 1978"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Agama: Islam"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kewarganegaraan: Indonesia"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pekerjaan: Ibu Rumah Tangga"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pengeluaran Per Bulan: Rp3.000.000"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Masih Hidup: Ya"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/card_background" android:padding="12dp" android:elevation="4dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Keterangan Ibu" android:textStyle="bold" android:textSize="18sp" android:textColor="#000000"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nama: Sri Lestari"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TTL: Malang, 5 Maret 1978"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Agama: Islam"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kewarganegaraan: Indonesia"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pekerjaan: Ibu Rumah Tangga"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pengeluaran Per Bulan: Rp3.000.000"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Masih Hidup: Ya"/>
+        </LinearLayout>
+
+        <!-- Perkembangan Siswa -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/card_background" android:padding="12dp" android:elevation="4dp" android:layout_marginTop="8dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Perkembangan Siswa" android:textStyle="bold" android:textSize="18sp" android:textColor="#000000"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Menerima Beasiswa: Tidak"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Meninggalkan Sekolah: Tidak"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Akhir Pendidikan: SMA"/>
+        </LinearLayout>
+
+        <!-- Setelah Lulus -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/card_background" android:padding="12dp" android:elevation="4dp" android:layout_marginTop="8dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Setelah Lulus" android:textStyle="bold" android:textSize="18sp" android:textColor="#000000"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Melanjutkan ke: Universitas Negeri Malang"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bekerja: Belum"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tanggal Mulai Bekerja: -"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Penghasilan: -"/>
+        </LinearLayout>
+
+        <!-- Tombol Ajukan Perubahan -->
+
+    </LinearLayout>
+</ScrollView>

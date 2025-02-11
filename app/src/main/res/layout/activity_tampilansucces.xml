@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/light_gray"
+    android:padding="20dp">
+
+    <!-- Gambar centang -->
+    <ImageView
+        android:id="@+id/img_success"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/suces"
+    android:scaleType="centerInside"
+    android:layout_marginBottom="20dp" />
+
+    <!-- Judul -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Form Berhasil Diajukan !"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:gravity="center" />
+
+    <!-- Deskripsi -->
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terimakasih, Form telah berhasil diajukan !."
+        android:textSize="24sp"
+        android:textColor="@color/blue_light"
+        android:gravity="center"
+        android:layout_marginTop="8dp" />
+
+    <!-- Tombol Kembali -->
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/blue"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+</LinearLayout>
