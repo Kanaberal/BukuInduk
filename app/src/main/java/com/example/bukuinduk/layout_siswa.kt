@@ -35,7 +35,7 @@ class layout_siswa : AppCompatActivity() {
                     true
                 }
                 R.id.navigation_eraport -> {
-                    replaceFragment(PengajuanFragment()) // Pastikan ini adalah subclass Fragment
+                    replaceFragment(EraportFragment()) // Pastikan ini adalah subclass Fragment
                     true
                 }
                 else -> false

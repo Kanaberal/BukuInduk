@@ -57,11 +57,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/baground_input"
+            android:focusable="false"
             android:hint="Tanggal Lahir (DD/MM/YYYY)"
+            android:onClick="showDatePickerDialog"
             android:padding="12dp"
             android:textAlignment="center"
-            android:textColorHint="@color/gray"
-            android:inputType="date" />
+            android:textColorHint="@color/gray" />
 
         <!-- Tombol Masuk -->
         <androidx.appcompat.widget.AppCompatButton
