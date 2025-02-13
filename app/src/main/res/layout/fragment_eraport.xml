@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rounded_button"
+                android:src="@drawable/baseline_arrow_back_ios_new_24" />
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-Raport"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#79ACF3"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="16dp" />
+
+
+            <EditText
+                android:id="@+id/et_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Nama"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:background="@android:drawable/editbox_background" />
+
+            <EditText
+                android:id="@+id/et_nisn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="NISN"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:background="@android:drawable/editbox_background" />
+
+            <EditText
+                android:id="@+id/et_sekolah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Sekolah"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:background="@android:drawable/editbox_background" />
+
+            <EditText
+                android:id="@+id/et_bidang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Bidang/Program/Kompetensi Keahlian"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:background="@android:drawable/editbox_background" />
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/table_border">
+
+                <!-- Header -->
+                <TableRow>
+                    <TextView android:layout_width="0dp" android:layout_weight="2"
+                        android:gravity="center" android:padding="16dp"
+                        android:text="MATA PELAJARAN" android:textStyle="bold"
+                        android:textSize="18sp" android:background="@drawable/table_border" />
+
+                    <TextView android:layout_width="0dp" android:layout_weight="1"
+                        android:gravity="center" android:padding="16dp"
+                        android:text="NILAI" android:textStyle="bold"
+                        android:textSize="18sp" android:background="@drawable/table_border" />
+                </TableRow>
+
+                <!-- Semua Mata Pelajaran (TABEL RAPIH + FIX TARGET TOO SMALL) -->
+                <TableRow>
+                    <TextView android:layout_width="0dp" android:layout_weight="2"
+                        android:padding="16dp" android:text="Pendidikan Agama dan Budi Pekerti"
+                        android:textSize="16sp" android:background="@drawable/table_border" />
+                    <EditText android:id="@+id/et_nilai_agama" android:layout_width="0dp"
+                        android:layout_weight="1" android:padding="16dp" android:hint="Nilai"
+                        android:textSize="16sp" android:minHeight="56dp"
+                        android:background="@drawable/table_border" android:inputType="number" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:layout_width="0dp" android:layout_weight="2"
+                        android:padding="16dp" android:text="PPKN"
+                        android:textSize="16sp" android:background="@drawable/table_border" />
+                    <EditText android:id="@+id/et_nilai_ppkn" android:layout_width="0dp"
+                        android:layout_weight="1" android:padding="16dp" android:hint="Nilai"
+                        android:textSize="16sp" android:minHeight="56dp"
+                        android:background="@drawable/table_border" android:inputType="number" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:layout_width="0dp" android:layout_weight="2"
+                        android:padding="16dp" android:text="Bahasa Indonesia"
+                        android:textSize="16sp" android:background="@drawable/table_border" />
+                    <EditText android:id="@+id/et_nilai_bindo" android:layout_width="0dp"
+                        android:layout_weight="1" android:padding="16dp" android:hint="Nilai"
+                        android:textSize="16sp" android:minHeight="56dp"
+                        android:background="@drawable/table_border" android:inputType="number" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:layout_width="0dp" android:layout_weight="2"
+                        android:padding="16dp" android:text="Matematika"
+                        android:textSize="16sp" android:background="@drawable/table_border" />
+                    <EditText android:id="@+id/et_nilai_mtk" android:layout_width="0dp"
+                        android:layout_weight="1" android:padding="16dp" android:hint="Nilai"
+                        android:textSize="16sp" android:minHeight="56dp"
+                        android:background="@drawable/table_border" android:inputType="number" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:layout_width="0dp" android:layout_weight="2"
+                        android:padding="16dp" android:text="Sejarah Indonesia"
+                        android:textSize="16sp" android:background="@drawable/table_border" />
+                    <EditText android:id="@+id/et_nilai_SI" android:layout_width="0dp"
+                        android:layout_weight="1" android:padding="16dp" android:hint="Nilai"
+                        android:textSize="16sp" android:minHeight="56dp"
+                        android:background="@drawable/table_border" android:inputType="number" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:layout_width="0dp" android:layout_weight="2"
+                        android:padding="16dp" android:text="Bahasa Inggris"
+                        android:textSize="16sp" android:background="@drawable/table_border" />
+                    <EditText android:id="@+id/et_nilai_bing" android:layout_width="0dp"
+                        android:layout_weight="1" android:padding="16dp" android:hint="Nilai"
+                        android:textSize="16sp" android:minHeight="56dp"
+                        android:background="@drawable/table_border" android:inputType="number" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:layout_width="0dp" android:layout_weight="2"
+                        android:padding="16dp" android:text="Seni Budaya"
+                        android:textSize="16sp" android:background="@drawable/table_border" />
+                    <EditText android:id="@+id/et_nilai_sb" android:layout_width="0dp"
+                        android:layout_weight="1" android:padding="16dp" android:hint="Nilai"
+                        android:textSize="16sp" android:minHeight="56dp"
+                        android:background="@drawable/table_border" android:inputType="number" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:layout_width="0dp" android:layout_weight="2"
+                        android:padding="16dp" android:text="Penjaskes"
+                        android:textSize="16sp" android:background="@drawable/table_border" />
+                    <EditText android:id="@+id/et_nilai_penjas" android:layout_width="0dp"
+                        android:layout_weight="1" android:padding="16dp" android:hint="Nilai"
+                        android:textSize="16sp" android:minHeight="56dp"
+                        android:background="@drawable/table_border" android:inputType="number" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:layout_width="0dp" android:layout_weight="2"
+                        android:padding="16dp" android:text="Bahasa Jawa"
+                        android:textSize="16sp" android:background="@drawable/table_border" />
+                    <EditText android:id="@+id/et_nilai_bj" android:layout_width="0dp"
+                        android:layout_weight="1" android:padding="16dp" android:hint="Nilai"
+                        android:textSize="16sp" android:minHeight="56dp"
+                        android:background="@drawable/table_border" android:inputType="number" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:layout_width="0dp" android:layout_weight="2"
+                        android:padding="16dp" android:text="Simulasi dan Komunikasi Digital"
+                        android:textSize="16sp" android:background="@drawable/table_border" />
+                    <EditText android:id="@+id/et_nilai_sdkd" android:layout_width="0dp"
+                        android:layout_weight="1" android:padding="16dp" android:hint="Nilai"
+                        android:textSize="16sp" android:minHeight="56dp"
+                        android:background="@drawable/table_border" android:inputType="number" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:layout_width="0dp" android:layout_weight="2"
+                        android:padding="16dp" android:text="Fisika"
+                        android:textSize="16sp" android:background="@drawable/table_border" />
+                    <EditText android:id="@+id/et_nilai_fisika" android:layout_width="0dp"
+                        android:layout_weight="1" android:padding="16dp" android:hint="Nilai"
+                        android:textSize="16sp" android:minHeight="56dp"
+                        android:background="@drawable/table_border" android:inputType="number" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:layout_width="0dp" android:layout_weight="2"
+                        android:padding="16dp" android:text="Kimia"
+                        android:textSize="16sp" android:background="@drawable/table_border" />
+                    <EditText android:id="@+id/et_nilai_kimia" android:layout_width="0dp"
+                        android:layout_weight="1" android:padding="16dp" android:hint="Nilai"
+                        android:textSize="16sp" android:minHeight="56dp"
+                        android:background="@drawable/table_border" android:inputType="number" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:layout_width="0dp" android:layout_weight="2"
+                        android:padding="16dp" android:text="Sistem Komputer"
+                        android:textSize="16sp" android:background="@drawable/table_border" />
+                    <EditText android:id="@+id/et_nilai_sk" android:layout_width="0dp"
+                        android:layout_weight="1" android:padding="16dp" android:hint="Nilai"
+                        android:textSize="16sp" android:minHeight="56dp"
+                        android:background="@drawable/table_border" android:inputType="number" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:layout_width="0dp" android:layout_weight="2"
+                        android:padding="16dp" android:text="Komputer dan Jaringan Dasar"
+                        android:textSize="16sp" android:background="@drawable/table_border" />
+                    <EditText android:id="@+id/et_nilai_kdj" android:layout_width="0dp"
+                        android:layout_weight="1" android:padding="16dp" android:hint="Nilai"
+                        android:textSize="16sp" android:minHeight="56dp"
+                        android:background="@drawable/table_border" android:inputType="number" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:layout_width="0dp" android:layout_weight="2"
+                        android:padding="16dp" android:text="Pemrograman Dasar"
+                        android:textSize="16sp" android:background="@drawable/table_border" />
+                    <EditText android:id="@+id/et_nilai_pd" android:layout_width="0dp"
+                        android:layout_weight="1" android:padding="16dp" android:hint="Nilai"
+                        android:textSize="16sp" android:minHeight="56dp"
+                        android:background="@drawable/table_border" android:inputType="number" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:layout_width="0dp" android:layout_weight="2"
+                        android:padding="16dp" android:text="Dasar Desain Grafis"
+                        android:textSize="16sp" android:background="@drawable/table_border" />
+                    <EditText android:id="@+id/et_nilai_ddg" android:layout_width="0dp"
+                        android:layout_weight="1" android:padding="16dp" android:hint="Nilai"
+                        android:textSize="16sp" android:minHeight="56dp"
+                        android:background="@drawable/table_border" android:inputType="number" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:layout_width="0dp" android:layout_weight="2"
+                        android:padding="16dp" android:text="Pemodelan Perangkat Lunak"
+                        android:textSize="16sp" android:background="@drawable/table_border" />
+                    <EditText android:id="@+id/et_nilai_ppl" android:layout_width="0dp"
+                        android:layout_weight="1" android:padding="16dp" android:hint="Nilai"
+                        android:textSize="16sp" android:minHeight="56dp"
+                        android:background="@drawable/table_border" android:inputType="number" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:layout_width="0dp" android:layout_weight="2"
+                        android:padding="16dp" android:text="Basis Data"
+                        android:textSize="16sp" android:background="@drawable/table_border" />
+                    <EditText android:id="@+id/et_nilai_bd" android:layout_width="0dp"
+                        android:layout_weight="1" android:padding="16dp" android:hint="Nilai"
+                        android:textSize="16sp" android:minHeight="56dp"
+                        android:background="@drawable/table_border" android:inputType="number" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:layout_width="0dp" android:layout_weight="2"
+                        android:padding="16dp" android:text="PBO"
+                        android:textSize="16sp" android:background="@drawable/table_border" />
+                    <EditText android:id="@+id/et_nilai_pbo" android:layout_width="0dp"
+                        android:layout_weight="1" android:padding="16dp" android:hint="Nilai"
+                        android:textSize="16sp" android:minHeight="56dp"
+                        android:background="@drawable/table_border" android:inputType="number" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:layout_width="0dp" android:layout_weight="2"
+                        android:padding="16dp" android:text="Pemr. Web dan Per. Bergerak"
+                        android:textSize="16sp" android:background="@drawable/table_border" />
+                    <EditText android:id="@+id/et_nilai_wpb" android:layout_width="0dp"
+                        android:layout_weight="1" android:padding="16dp" android:hint="Nilai"
+                        android:textSize="16sp" android:minHeight="56dp"
+                        android:background="@drawable/table_border" android:inputType="number" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:layout_width="0dp" android:layout_weight="2"
+                        android:padding="16dp" android:text="Produk Kreatif dan Kewirausahaan"
+                        android:textSize="16sp" android:background="@drawable/table_border" />
+                    <EditText android:id="@+id/et_nilai_pkdk" android:layout_width="0dp"
+                        android:layout_weight="1" android:padding="16dp" android:hint="Nilai"
+                        android:textSize="16sp" android:minHeight="56dp"
+                        android:background="@drawable/table_border" android:inputType="number" />
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/btn_simpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="simpan"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#2264E5"
+                android:layout_marginTop="16dp"
+                android:padding="12dp"
+                android:gravity="center"
+                android:elevation="4dp" />
+
+            <Button
+                android:id="@+id/btn_semester_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Semester Selanjutnya"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#2264E5"
+                android:layout_marginTop="16dp"
+                android:padding="12dp"
+                android:gravity="center"
+                android:elevation="4dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
